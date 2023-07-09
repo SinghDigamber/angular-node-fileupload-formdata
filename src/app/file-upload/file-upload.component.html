@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <h2 class="mb-5">MEAN Stack Angular HttpClient Post FormData Eample</h2>
+  <form [formGroup]="form" (ngSubmit)="submitForm()">
+    <div class="form-group mb-3">
+      <input type="file" (change)="uploadFile($event)" />
+    </div>
+
+    <div class="form-group mb-3">
+      <input
+        class="form-control"
+        placeholder="Image name"
+        formControlName="name"
+      />
+    </div>
+
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg">Submit</button>
+    </div>
+  </form>
+</div>
